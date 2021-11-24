@@ -31,8 +31,8 @@ _Especifique o que um programador precisa saber para implementar seu protocolo e
 ### Como as mensagens são definidas?
 _Especifique mensagens enviadas pelo cliente e respostas do servidor_
 
->Cliente envia: GET / HTTP/Tupi ou GET / (DESTINO DO ARQUIVO HTML)
->Servidor responde: 
+>Cliente envia: GET / HTTP/Tupi ou GET / (DESTINO DO ARQUIVO HTML)  
+>Servidor responde:   
 >HTTP/1.1 200 OK  
 >Tupi  
 >Server: Apache  
@@ -61,7 +61,7 @@ _campos devem seguir padrão NOME_DO_CAMPO: VALORES_
 ## Como a aplicação pode ser testada no Core?
 _Descreva como o servidor pode ser implantado e testado, apresentando um manual de uso_ 
 
-> Após abrir o CORE, adicionar um servidor e um cliente a interface e ligar ambos, gerando uma conexão. Em seguida, inicia a sessão e testa conectividade por meio do comando ping. Em procedência, importa-se o código http.py para o servidor e o cliente.py para o cliente. Primeiramente se é executado o código do servidor e em seguida o do cliente. A partir deste momento é possível realizar as requisições definidas acima ao servidor. O usuário possui o poder de alterar os arquivos htmls sem a necessidade de alterar o código fonte.
+> Após abrir o CORE, adiciona um servidor e um cliente a interface e ligar ambos, gerando uma conexão. Em seguida, inicia a sessão e testa conectividade por meio do comando ping. Em procedência, importa-se o código http.py para o servidor e o cliente.py para o cliente. Primeiramente se é executado o código do servidor e em seguida o do cliente. A partir deste momento é possível realizar as requisições definidas acima ao servidor. O usuário possui o poder de alterar os arquivos htmls sem a necessidade de alterar o código fonte do protocolo.
 
 ## Faça um registro do funcionamento de sua aplicação 
 _Apresente um exemplo de teste mostrando que o cliente e o servior  HTTP Tupi funcionou corretamente
