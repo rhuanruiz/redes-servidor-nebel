@@ -26,17 +26,19 @@ _Descreva quais os módulos de hardware, software e protocolos necessários para
 ## Qual o formato do protocolo?
 _Especifique o que um programador precisa saber para implementar seu protocolo em qualquer linguagem_
 
+>Requisições do protocolo HTTP e especificar a localização dos arquivos html necessários para execução do protocolo.
 
 ### Como as mensagens são definidas?
 _Especifique mensagens enviadas pelo cliente e respostas do servidor_
 Cliente envia: GET / HTTP/Tupi ou GET / (DESTINO DO ARQUIVO HTML)
-Servidor responde: HTTP/1.1 200 OK
-                   Tupi
-                   Server: Apache
-                   Content-Type: text/html
+Servidor responde: HTTP/1.1 200 OK  
+                   Tupi  
+                   Server: Apache  
+                   Content-Type: text/html  
                    
-                   !DOCTYPE html...
-                   (TEXTO EM HTML)
+                   !DOCTYPE html...  
+                   (TEXTO EM HTML)  
+                   
 Caso o Cliente envie algo diferente
 Servidor responde: HTTP/1.1 404 Not Found ou HTTP/1.1 400 Bad Request
 
@@ -44,15 +46,15 @@ As requições GET / HTTP/1.1 seguem o padrão.
 
 ### Quais os campos definidos?
 _campos devem seguir padrão NOME_DO_CAMPO: VALORES_ 
-Tupi: 1
-Server: Apache
-Content-type: text/html
+Tupi: 1  
+Server: Apache  
+Content-type: text/html  
 
 ### Quais os possíveis valores de cada campo?
 > 
-Tupi: 1
-Server: Apache
-Content-type: text/html
+Tupi: 1  
+Server: Apache  
+Content-type: text/html  
 
 ## Como a aplicação pode ser testada no Core?
 _Descreva como o servidor pode ser implantado e testado, apresentando um manual de uso_ 
