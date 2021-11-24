@@ -1,4 +1,4 @@
-# http-tupi:  _coloque aqui o titulo de sua extensão de protocolo HTTP_
+# http-tupi:  _Descrição DECAT HTTP/Tupi_
 
 ## _Rhuan Lima Ruiz de Oliveira_
 
@@ -30,27 +30,30 @@ _Especifique o que um programador precisa saber para implementar seu protocolo e
 
 ### Como as mensagens são definidas?
 _Especifique mensagens enviadas pelo cliente e respostas do servidor_
-Cliente envia: GET / HTTP/Tupi ou GET / (DESTINO DO ARQUIVO HTML)
-Servidor responde: 
-HTTP/1.1 200 OK  
-Tupi  
-Server: Apache  
-Content-Type: text/html               
-!DOCTYPE html...  
-(TEXTO EM HTML)  
-                   
-Caso o Cliente envie algo diferente
-Servidor responde: HTTP/1.1 404 Not Found ou HTTP/1.1 400 Bad Request
 
-As requições GET / HTTP/1.1 seguem o padrão.
+>Cliente envia: GET / HTTP/Tupi ou GET / (DESTINO DO ARQUIVO HTML)
+>Servidor responde: 
+>HTTP/1.1 200 OK  
+>Tupi  
+>Server: Apache  
+>Content-Type: text/html               
+>!DOCTYPE html...  
+>(TEXTO EM HTML)  
+>                   
+>Caso o Cliente envie algo diferente
+>Servidor responde: HTTP/1.1 404 Not Found ou HTTP/1.1 400 Bad Request
+>
+>As requições GET / HTTP/1.1 seguem o padrão.
 
 ### Quais os campos definidos?
-_campos devem seguir padrão NOME_DO_CAMPO: VALORES_   
+_campos devem seguir padrão NOME_DO_CAMPO: VALORES_  
+
 >Tupi: 1  
 >Server: Apache  
 >Content-type: text/html  
 
 ### Quais os possíveis valores de cada campo?
+
 >Tupi: 1  
 >Server: Apache  
 >Content-type: text/html  
@@ -65,5 +68,3 @@ _Apresente um exemplo de teste mostrando que o cliente e o servior  HTTP Tupi fu
 
 > ![labredes](https://user-images.githubusercontent.com/54746864/143238786-02191d5d-62fc-4211-8f37-f18bb04317cb.png)  
 > ![labredes2](https://user-images.githubusercontent.com/54746864/143239006-6f548843-f362-42db-a118-55d54837f596.png)
-
-
