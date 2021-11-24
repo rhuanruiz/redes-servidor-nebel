@@ -11,7 +11,7 @@ Se seu servidor receber mensagens sem a extensão do campo proposto, o servidor 
 ## Qual o problema considerado?  
 _Justifique a aplicação de sua solução proposta_
 
->O Departamento de Estatística e Ciências Atuariais (DECAT) está recebendo visitantes e instalou um visor em sua entrada mostrando, que exibe a descrição do departamento presente em sua página web. Para isso, sempre que um visitante chega uma requisição é enviada ao HTTP tupi que retorna um html com a descrição. Ao mesmo tempo, é possível requerer outros arquivos htmls quando a localização é especificada na requisição. Como solicitado pela problemática, também é possível atender requisições do próprio HTTP/1.1.
+>O Departamento de Estatística e Ciências Atuariais (DECAT) está recebendo visitantes e instalou um televisor em sua entrada que exibe a descrição do departamento presente em sua página web. Para isso, sempre que um visitante chega, uma requisição é enviada ao HTTP tupi que retorna um html com a descrição. Ao mesmo tempo, é possível requerer outros arquivos htmls quando a localização é especificada na requisição. Como solicitado pela problemática, também é possível atender requisições do próprio HTTP/1.1.
 
 ## Qual o público alvo?  
 _Descreva quais os usuários em potencial para sua aplicação web_
@@ -31,13 +31,13 @@ _Especifique o que um programador precisa saber para implementar seu protocolo e
 ### Como as mensagens são definidas?
 _Especifique mensagens enviadas pelo cliente e respostas do servidor_
 Cliente envia: GET / HTTP/Tupi ou GET / (DESTINO DO ARQUIVO HTML)
-Servidor responde: HTTP/1.1 200 OK  
-                   Tupi  
-                   Server: Apache  
-                   Content-Type: text/html  
-                   
-                   !DOCTYPE html...  
-                   (TEXTO EM HTML)  
+Servidor responde: 
+HTTP/1.1 200 OK  
+Tupi  
+Server: Apache  
+Content-Type: text/html               
+!DOCTYPE html...  
+(TEXTO EM HTML)  
                    
 Caso o Cliente envie algo diferente
 Servidor responde: HTTP/1.1 404 Not Found ou HTTP/1.1 400 Bad Request
@@ -45,21 +45,25 @@ Servidor responde: HTTP/1.1 404 Not Found ou HTTP/1.1 400 Bad Request
 As requições GET / HTTP/1.1 seguem o padrão.
 
 ### Quais os campos definidos?
-_campos devem seguir padrão NOME_DO_CAMPO: VALORES_ 
-Tupi: 1  
-Server: Apache  
-Content-type: text/html  
+_campos devem seguir padrão NOME_DO_CAMPO: VALORES_   
+>Tupi: 1  
+>Server: Apache  
+>Content-type: text/html  
 
 ### Quais os possíveis valores de cada campo?
-> 
-Tupi: 1  
-Server: Apache  
-Content-type: text/html  
+>Tupi: 1  
+>Server: Apache  
+>Content-type: text/html  
 
 ## Como a aplicação pode ser testada no Core?
 _Descreva como o servidor pode ser implantado e testado, apresentando um manual de uso_ 
+
 > Após abrir o CORE, adicionar um servidor e um cliente a interface e ligar ambos, gerando uma conexão. Em seguida, inicia a sessão e testa conectividade por meio do comando ping. Em procedência, importa-se o código http.py para o servidor e o cliente.py para o cliente. Primeiramente se é executado o código do servidor e em seguida o do cliente. A partir deste momento é possível realizar as requisições definidas acima ao servidor. O usuário possui o poder de alterar os arquivos htmls sem a necessidade de alterar o código fonte.
 
 ## Faça um registro do funcionamento de sua aplicação 
 _Apresente um exemplo de teste mostrando que o cliente e o servior  HTTP Tupi funcionou corretamente
-> Imagem enviada pelo Sigaa como solicitado.
+
+> ![labredes](https://user-images.githubusercontent.com/54746864/143238786-02191d5d-62fc-4211-8f37-f18bb04317cb.png)  
+> ![labredes2](https://user-images.githubusercontent.com/54746864/143239006-6f548843-f362-42db-a118-55d54837f596.png)
+
+
