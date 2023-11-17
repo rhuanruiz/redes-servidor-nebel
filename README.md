@@ -1,4 +1,4 @@
-# http-tupi:  _Descrição DECAT HTTP/Tupi_
+# Autores
 
 ## _Rhuan Lima Ruiz de Oliveira_
 
